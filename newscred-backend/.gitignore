@@ -34,4 +34,4 @@ build/
 
 
 resources/
-main/resources/application.properties
+\newscred-backend\src\main\resources\application.properties
