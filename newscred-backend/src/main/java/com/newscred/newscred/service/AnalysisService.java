@@ -21,6 +21,10 @@ public class AnalysisService {
             AnalysisRequest request,
             String userEmail) {
 
+        if (request == null || request.getArticleText() == null || request.getArticleText().trim().isEmpty()) {
+            throw new IllegalArgumentException("Article text is required");
+        }
+
         int score = 50;
 
         String text =

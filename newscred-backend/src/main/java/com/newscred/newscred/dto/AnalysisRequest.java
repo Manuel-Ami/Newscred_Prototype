@@ -1,10 +1,17 @@
 package com.newscred.newscred.dto;
 
-import lombok.Data;
-
-@Data
 public class AnalysisRequest {
 
     private String articleText;
 
+    public AnalysisRequest() {
+    }
+
+    public String getArticleText() {
+        return articleText;
+    }
+
+    public void setArticleText(String articleText) {
+        this.articleText = articleText;
+    }
 }
